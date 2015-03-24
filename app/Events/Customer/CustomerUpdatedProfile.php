@@ -51,4 +51,8 @@ class CustomerUpdatedProfile extends Event {
         return $this->value;
     }
 
+    public function getType()
+    {
+        return Customer::class;
+    }
 }

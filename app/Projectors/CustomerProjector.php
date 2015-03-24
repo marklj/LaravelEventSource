@@ -1,6 +1,5 @@
 <?php namespace App\Projectors;
 
-use App\Projectors\CustomerRepository;
 use App\Events\Customer\CustomerRegistered;
 use App\Events\Customer\CustomerUpdatedProfile;
 

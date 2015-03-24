@@ -2,6 +2,6 @@
 
 abstract class Event {
 
-	//
+	abstract public function getType();
 
 }

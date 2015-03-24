@@ -1,5 +1,6 @@
 <?php namespace App\Events\Customer;
 
+use App\Customer;
 use App\Events\Event;
 
 use Illuminate\Queue\SerializesModels;
@@ -51,4 +52,8 @@ class CustomerRegistered extends Event {
         $this->surname = $surname;
     }
 
+    public function getType()
+    {
+        return Customer::class;
+    }
 }

@@ -14,7 +14,8 @@ class CreateEventStoreTable extends Migration {
 	{
         Schema::connection('mysql')->create('event_store', function($table)
         {
-            $table->increments('id');
+            $table->text('uuid', 80);
+            $table->text('type', 100);
             $table->text('event');
             $table->string('created_at');
         });
